@@ -1,0 +1,13 @@
+prefix=C:/Users/namit/Desktop/Data Science/notes by namit/LangChain/Gemini-models/venv/Library
+exec_prefix=C:/Users/namit/Desktop/Data Science/notes by namit/LangChain/Gemini-models/venv/Library
+libdir=C:/Users/namit/Desktop/Data Science/notes by namit/LangChain/Gemini-models/venv/Library/lib
+sharedlibdir=C:/Users/namit/Desktop/Data Science/notes by namit/LangChain/Gemini-models/venv/Library/lib
+includedir=C:/Users/namit/Desktop/Data Science/notes by namit/LangChain/Gemini-models/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
