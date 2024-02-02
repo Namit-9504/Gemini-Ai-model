@@ -31,8 +31,8 @@ def input_image_setup(uploaded_file):
         ]
         return image_parts
     else:
-        st.write("Please Upload a image of food to move further")
-        #raise FileNotFoundError("No file uploaded")
+        
+        raise FileNotFoundError("No file uploaded")
     
 ##initialize our streamlit app
 
@@ -65,8 +65,12 @@ You are an expert in nutritionist where you need to see the food items from the 
 ## If submit button is clicked
 
 if submit:
-    image_data=input_image_setup(uploaded_file)
-    response=get_gemini_repsonse(input_prompt,image_data,input)
-    st.subheader("The Response is")
-    st.write(response)
+    if uploaded_file is not None:
+
+        image_data=input_image_setup(uploaded_file)
+        response=get_gemini_repsonse(input_prompt,image_data,input)
+        st.subheader("The Response is")
+        st.write(response)
+    else:
+        st.write("Please Upload a image of food ")
 
