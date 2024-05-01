@@ -41,7 +41,7 @@ in the output dont show the provided job description
 ## streamlit app
 st.set_page_config(page_title="ATS Resume EXpert")
 st.title("Third Year Mini Project")
-st.title("Application Tracking System') 
+st.title("Application Tracking System") 
 st.text("Improve Your Resume ATS")
 jd=st.text_area("Paste the Job Description")
 uploaded_file=st.file_uploader("Upload Your Resume",type="pdf",help="Please uplaod the pdf")
